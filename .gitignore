@@ -1,0 +1,22 @@
+# ===== Compiled binaries =====
+a.out
+*.out
+*.exe
+*.app
+ArenaAllocator
+
+# ===== Object files =====
+*.o
+*.obj
+
+# ===== Build directories =====
+build/
+bin/
+cmake-build-*/
+
+# ===== macOS =====
+.DS_Store
+
+# ===== VS Code =====
+.vscode/
+
