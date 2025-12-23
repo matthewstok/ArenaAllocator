@@ -4,7 +4,7 @@
 #include <string>
 
 //forward decalre
-enum class BinaryOp { Add, Sub, Multi, Divid };
+enum class BinaryOp { Add, Sub, Multi, Divid, None };
 
 enum TokenType
 {
@@ -21,7 +21,7 @@ struct Token
 {
     std::string value;
     TokenType type;
-    BinaryOp op; 
+    BinaryOp op = BinaryOp::None;
     
     static std::vector<Token> tokenize(const std::string& sourceString);
 };

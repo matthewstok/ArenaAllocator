@@ -50,10 +50,10 @@ std::vector<Token> Token::tokenize(const std::string& sourceString)
                 case '(': tokens.push_back(Token{ "(", TokenType::OpenParen }); break;
                 case ')': tokens.push_back(Token{ ")", TokenType::CloseParen }); break;
                 case '=': tokens.push_back(Token{ "=", TokenType::Equals }); break;
-                case '+': tokens.push_back(Token{ "+", TokenType::BinaryOperator }); break;
-                case '-': tokens.push_back(Token{ "-", TokenType::BinaryOperator }); break;
-                case '*': tokens.push_back(Token{ "*", TokenType::BinaryOperator}); break;
-                case '/': tokens.push_back(Token{ "/", TokenType::BinaryOperator }); break;
+                case '+': tokens.push_back(Token{ "+", TokenType::BinaryOperator, BinaryOp::Add }); break;
+                case '-': tokens.push_back(Token{ "-", TokenType::BinaryOperator, BinaryOp::Sub }); break;
+                case '*': tokens.push_back(Token{ "*", TokenType::BinaryOperator, BinaryOp::Multi }); break;
+                case '/': tokens.push_back(Token{ "/", TokenType::BinaryOperator, BinaryOp::Divid }); break;
                 default:
                     throw std::runtime_error(std::string("Unknown character: ") + c);
             }
