@@ -27,11 +27,11 @@ This project is designed as an educational exercise in memory management, parsin
 ---
 
 ## Directory Structure
-/src → C++ source files (.cpp)
-/include → Header files (.h)
-/bin → Compiled executables (created after build)
-Makefile → Build script
-README.md → Project description
+- /src → C++ source files (.cpp)
+- /include → Header files (.h)
+- /bin → Compiled executables (created after build)
+- Makefile → Build script
+- README.md → Project description
 
 
 ---
